@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>itsprasu</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    footer {
+      text-align: center;
+      padding: 12px;
+      background: #f1f1f1;
+      font-size: 14px;
+      color: #555;
+      margin-top: 20px;
+      border-radius: 6px;
+      box-shadow: 0px -2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">Morphix</h1>
+<p class="tagline">Transform between different formats</p>
+
+    <!-- PDF → Image -->
+    <h2>PDF to JPG/PNG</h2>
+    <input type="file" id="pdfFile" accept="application/pdf">
+    <select id="format">
+      <option value="png">PNG</option>
+      <option value="jpeg">JPG</option>
+    </select>
+    <button id="convertPdfToImg">Convert PDF → Image</button>
+    <div id="output"></div>
+
+   
+    <hr>
+
+    <!-- Image → PDF -->
+    <h2>Image(s) to PDF</h2>
+    <input type="file" id="imgFiles" accept="image/*" multiple>
+    <button id="convertImgToPdf">Convert Image → PDF</button>
+    <div id="pdfOutput"></div>
+    <footer>
+      © 2025 Prasurjya Goswami. All rights reserved.
+    </footer>
+
+  </div>
+   <!-- Footer placed here -->
+    
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
